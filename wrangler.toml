@@ -1,0 +1,14 @@
+# Cloudflare Worker 配置文件
+name = "claude-api-proxy"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# 如果需要自定义域名，取消注释并配置以下部分
+# [routes]
+# route = "your-domain.com/*"
+# zone_name = "your-domain.com"
+
+# 或者使用自定义域名（推荐）
+# [[routes]]
+# pattern = "claude-api.your-domain.com/*"
+# custom_domain = true
